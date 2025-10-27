@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aswal Family Tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 90vh;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 15px 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .person {
+            background: #fff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            border: 3px solid transparent;
+            border-color: #3498db;
+            border-radius: 8px;
+            padding: 8px 14px;
+            min-width: 180px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .person:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .meta {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+
+        .connector {
+            width: 2px;
+            height: 20px;
+            background: #ccc;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Bhagwan's Family Tree</h1>
+        <div class="tree">
+
+            <!-- Grandparents -->
+            <div class="row">
+                <div class="person">
+                    <div class="name">Lakshman Singh Aswal</div>
+                    <div class="meta">Grandfather</div>
+                </div>
+                <div class="person">
+                    <div class="name">Gauli Devi</div>
+                    <div class="meta">Grandmother</div>
+                </div>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Father's generation -->
+            <div class="row">
+                <div class="person">
+                    <div class="name">Chandra Singh</div>
+                    <div class="meta">Elder Brother of Father</div>
+                </div>
+                <div class="person">
+                    <div class="name">Veer Singh</div>
+                    <div class="meta">Elder Brother of Father</div>
+                </div>
+                <div class="person">
+                    <div class="name">Govind Singh</div>
+                    <div class="meta">Elder Brother of Father</div>
+                </div>
+                <div class="person">
+                    <div class="name">Kundan Singh Aswal</div>
+                    <div class="meta">Father</div>
+                </div>
+                <div class="person">
+                    <div class="name">Ganga Devi</div>
+                    <div class="meta">Mother</div>
+                </div>
+            </div>
+
+            <div class="connector"></div>
+
+            <!--brother -->
+            <div class="row">
+                <div class="person">
+                    <div class="name">Bhagwan Singh Aswal</div>
+                    <div class="meta">Myself</div>
+                </div>
+                <div class="person">
+                    <div class="name">Dheeraj Singh Aswal</div>
+                    <div class="meta">Younger Brother</div>
+                </div>
+            </div>
+
+            <div class="connector"></div>
+
+            <!-- Brother's family -->
+            <div class="row">
+                <div class="person">
+                    <div class="name">Priyanka Aswal</div>
+                    <div class="meta">Wife of Dheeraj</div>
+                </div>
+                <div class="person">
+                    <div class="name">Kanha Aswal</div>
+                    <div class="meta">Child of Dheeraj</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
